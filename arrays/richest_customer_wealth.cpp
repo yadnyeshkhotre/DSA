@@ -64,3 +64,21 @@ public:
 
     }
 };
+
+
+
+//another optimized code:
+class Solution {
+public:
+    int maximumWealth(vector<vector<int>>& accounts) {
+        int greatest_wealth=INT_MIN;
+        for(const auto& customer:accounts){
+            int wealth=0;
+            for(int account:customer){
+                wealth+=account;
+            }
+            greatest_wealth=max(greatest_wealth,wealth);
+        }
+        return greatest_wealth;
+    }
+};
