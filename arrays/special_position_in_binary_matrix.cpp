@@ -19,6 +19,7 @@ n == mat[i].length
 1 <= m, n <= 100
 mat[i][j] is either 0 or 1.
 
+question link:https://leetcode.com/problems/special-positions-in-a-binary-matrix/description/
 */
 
 
