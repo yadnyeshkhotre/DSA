@@ -1,3 +1,4 @@
+//question link:https://leetcode.com/problems/reverse-string/
 void helper(vector<char> &s, int i)
 {
     int n = s.size();
@@ -5,9 +6,7 @@ void helper(vector<char> &s, int i)
     {
         return;
     }
-
     swap(s[i], s[n - i - 1]);
-
     helper(s, i + 1);
 }
 
