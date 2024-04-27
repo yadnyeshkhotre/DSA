@@ -12,6 +12,10 @@ class Solution {
   public:
     int isDigitSumPalindrome(int n) {
         int sum=0;
+        // while(n){
+        //     sum+=n%10;
+        //     n/=10;
+        // }
         for(int i=n;i>0;i/=10){
             sum+=i%10;
         }
